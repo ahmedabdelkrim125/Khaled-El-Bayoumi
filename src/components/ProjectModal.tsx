@@ -27,80 +27,80 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
   const projectDetails = {
     project1: {
-      fullDescription: "تطبيق بسيط ومباشر لتتبع الأهداف يساعدك على إضافة وإدارة أهدافك اليومية أو طويلة الأمد بسهولة. تم تصميمه ليكون أداة سريعة وفعالة لتسجيل ما تريد إنجازه ومتابعته بواجهة نظيفة وخالية من التعقيدات.",
+      fullDescription: "A simple and straightforward goal-tracking application designed to help you easily add and manage your daily or long-term goals. It's built to be a fast and effective tool for logging and tracking your objectives with a clean, clutter-free interface.",
       features: [
-        "إضافة أهداف جديدة بسرعة",
-        "عرض قائمة واضحة لجميع الأهداف",
-        "إمكانية إزالة الأهداف عند اكتمالها",
-        "واجهة مستخدم بسيطة وبديهية",
-        "حفظ البيانات محليًا على الجهاز باستخدام Hive"
+        "Quickly add new goals",
+        "Display a clear list of all current goals",
+        "Ability to remove completed goals",
+        "Simple and intuitive user interface",
+        "Local data persistence using Hive"
       ],
       challenges: [
-        "إدارة الحالة المحلية للأهداف بكفاءة لضمان التحديث الفوري للواجهة",
-        "تصميم واجهة مستخدم سريعة الاستجابة",
-        "ضمان حفظ البيانات بشكل موثوق عند إغلاق التطبيق وإعادة فتحه"
+        "Efficiently managing local state for immediate UI updates",
+        "Designing a responsive and fast user interface",
+        "Ensuring reliable data storage when the app is closed and reopened"
       ],
       githubUrl: "https://github.com/khaled-elbaiomy/goals-app",
       liveUrl: "#",
-      duration: "أسبوعان",
-      teamSize: "فردي"
+      duration: "2 Weeks",
+      teamSize: "Solo"
     },
     project2: {
-      fullDescription: "تطبيق تعليمي ممتع لتعلم أساسيات اللغة اليابانية. يركز التطبيق على الكلمات والجمل الأكثر استخدامًا من خلال تقسيمها إلى فئات مثل الأرقام وأفراد العائلة والعبارات الشائعة، مع دعم صوتي لكل كلمة.",
+      fullDescription: "An engaging educational app for learning the basics of the Japanese language. The app focuses on commonly used words and phrases by dividing them into categories like numbers, family members, and common phrases, with audio support for each word.",
       features: [
-        "أقسام متعددة (أرقام، عائلة، عبارات، ألوان)",
-        "تشغيل ملفات صوتية للنطق الصحيح لكل كلمة",
-        "تصميم ملون وجذاب لجعل التعلم ممتعًا",
-        "سهولة التنقل بين الأقسام المختلفة",
-        "تجربة مستخدم بسيطة ومناسبة للمبتدئين"
+        "Multiple categories (Numbers, Family, Phrases, Colors)",
+        "Audio playback for correct pronunciation",
+        "Colorful and attractive design to make learning fun",
+        "Easy navigation between different sections",
+        "Simple user experience suitable for beginners"
       ],
       challenges: [
-        "تنظيم وإدارة الملفات الصوتية داخل التطبيق",
-        "تصميم واجهة مستخدم مناسبة للمحتوى التعليمي",
-        "ضمان تشغيل الصوت بسلاسة على مختلف الأجهزة"
+        "Organizing and managing audio assets within the app",
+        "Designing a user interface suitable for educational content",
+        "Ensuring smooth audio playback across different devices"
       ],
       githubUrl: "https://github.com/khaled-elbaiomy/my-toku-app",
       liveUrl: "#",
-      duration: "3 أسابيع",
-      teamSize: "فردي"
+      duration: "3 Weeks",
+      teamSize: "Solo"
     },
     project3: {
-      fullDescription: "تطبيق محادثة فوري متكامل مبني باستخدام Flutter و Firebase. يتيح للمستخدمين إنشاء حسابات والتواصل مع بعضهم البعض في الوقت الفعلي، مما يوفر تجربة محادثة سلسة وآمنة.",
+      fullDescription: "A full-featured real-time chat application built with Flutter and Firebase. It allows users to create accounts and communicate with each other instantly, providing a seamless and secure messaging experience.",
       features: [
-        "نظام مصادقة المستخدمين (تسجيل دخول وإنشاء حساب) عبر Firebase Authentication",
-        "إرسال واستقبال الرسائل في الوقت الفعلي",
-        "واجهة عرض الرسائل بتصميم كلاسيكي لتطبيقات المحادثة",
-        "استخدام Cloud Firestore كقاعدة بيانات NoSQL لتخزين الرسائل"
+        "User authentication (login and sign-up) via Firebase Authentication",
+        "Real-time message sending and receiving",
+        "Classic chat interface for displaying messages",
+        "Utilizes Cloud Firestore as a NoSQL database for message storage"
       ],
       challenges: [
-        "تطبيق المراسلة في الوقت الفعلي باستخدام Firebase Firestore Streams",
-        "إدارة مصادقة المستخدمين بشكل آمن",
-        "بناء واجهة مستخدم تفاعلية وسريعة الاستجابة للمحادثات"
+        "Implementing real-time messaging using Firebase Firestore Streams",
+        "Managing user authentication securely",
+        "Building a responsive and interactive UI for conversations"
       ],
       githubUrl: "https://github.com/khaled-elbaiomy/chat_app",
       liveUrl: "#",
-      duration: "شهر واحد",
-      teamSize: "فردي"
+      duration: "1 Month",
+      teamSize: "Solo"
     },
     project4: {
-      fullDescription: "تطبيق إخباري يعرض آخر الأخبار والمقالات من مصادر عالمية مختلفة باستخدام News API. يتيح التطبيق للمستخدمين البقاء على اطلاع دائم بالأحداث الجارية وتصفح الأخبار حسب الفئات التي تهمهم.",
+      fullDescription: "A news application that displays the latest news and articles from various global sources using the News API. The app allows users to stay updated on current events and browse news by categories that interest them.",
       features: [
-        "عرض الأخبار والمقالات من News API",
-        "إمكانية تصفح الأخبار حسب الفئات (أعمال، تكنولوجيا، رياضة، إلخ)",
-        "واجهة مستخدم نظيفة لعرض المقالات والصور بشكل جذاب",
-        "تحديث مستمر لأحدث الأخبار تلقائيًا",
-        "عرض تفاصيل الخبر عند الضغط عليه"
+        "Fetches and displays articles from the News API",
+        "Ability to browse news by category (Business, Tech, Sports, etc.)",
+        "Clean user interface for attractively displaying articles and images",
+        "Continuously updates with the latest news automatically",
+        "Displays article details upon selection"
       ],
       challenges: [
-        "التعامل الفعال مع طلبات API وإدارة الاستجابات",
-        "عرض البيانات المعقدة (الصور والنصوص) بشكل متناسق وجذاب",
-        "إدارة الحالة عند التنقل بين الفئات الإخبارية المختلفة",
-        "التعامل مع حالات عدم وجود صورة للمقال"
+        "Effectively handling API requests and managing responses",
+        "Displaying complex data (images and text) in a consistent and appealing way",
+        "Managing state when navigating between different news categories",
+        "Handling cases where an article has no associated image"
       ],
       githubUrl: "https://github.com/khaled-elbaiomy/news-app",
       liveUrl: "#",
-      duration: "شهر واحد",
-      teamSize: "فردي"
+      duration: "1 Month",
+      teamSize: "Solo"
     }
   };
 
@@ -137,7 +137,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             </div>
             <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
               <Code2 className="w-5 h-5" />
-              <span>{project.technologies.length} تقنيات</span>
+              <span>{project.technologies.length} Technologies</span>
             </div>
           </div>
 
@@ -146,7 +146,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
           </p>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">التقنيات المستخدمة</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Technologies Used</h3>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span 
@@ -161,7 +161,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
           {details?.features && (
             <div className="mb-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">الميزات الرئيسية</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Key Features</h3>
               <ul className="space-y-2">
                 {details.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2">
@@ -175,7 +175,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
           {details?.challenges && (
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">التحديات التقنية</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Technical Challenges</h3>
               <ul className="space-y-2">
                 {details.challenges.map((challenge, index) => (
                   <li key={index} className="flex items-start gap-2">
@@ -196,7 +196,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all"
               >
                 <ExternalLink className="w-5 h-5" />
-                عرض مباشر
+                Live Demo
               </a>
             )}
             {details?.githubUrl && (
@@ -207,7 +207,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 className="flex items-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:border-blue-300 hover:bg-blue-50 dark:border-gray-600 dark:text-gray-300 dark:hover:border-blue-400 dark:hover:bg-gray-700 transition-all"
               >
                 <Github className="w-5 h-5" />
-                عرض الكود
+                View Code
               </a>
             )}
           </div>

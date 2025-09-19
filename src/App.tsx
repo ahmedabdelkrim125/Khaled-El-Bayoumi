@@ -17,18 +17,15 @@ import {
 } from 'lucide-react';
 import ProjectModal from './components/ProjectModal';
 import { useDarkMode } from './hooks/useDarkMode';
-
 import goalsAppImage from './images/goals App.png';
 import tokuAppImage from './images/toku app.png';
 import chatAppImage from './images/chat App.png';
 import newsAppImage from './images/News App.png';
 
-
 function App() {
     const { isDarkMode, toggleDarkMode } = useDarkMode();
     const [selectedProject, setSelectedProject] = useState<any>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-
     const [projectImages, setProjectImages] = useState({
         project1: goalsAppImage,
         project2: tokuAppImage,
@@ -39,8 +36,8 @@ function App() {
     const projects = [
         {
             id: 'project1',
-            name: 'goals App',
-            description: 'تطبيق بسيط لتتبع الأهداف يساعدك على إضافة وإدارة أهدافك الشخصية أو أهداف مشاريعك. تتبع تقدمك بواجهة نظيفة وسهلة الاستخدام.',
+            name: 'Goals App',
+            description: 'A simple goal-tracking app that helps you add and manage your personal or project goals with a clean and user-friendly interface.',
             technologies: ['Flutter', 'Dart', 'Hive'],
             image: projectImages.project1,
             githubUrl: 'https://github.com/khaled-elbaiomy/goals-app',
@@ -49,7 +46,7 @@ function App() {
         {
             id: 'project2',
             name: 'Toku App',
-            description: 'تطبيق لتعلم اللغة اليابانية، يساعدك على تعلم الأرقام، أفراد العائلة، العبارات الأساسية، والألوان مع نطق صوتي لكل كلمة.',
+            description: 'A Japanese language learning app that helps you learn numbers, family members, and common phrases with audio pronunciation for each word.',
             technologies: ['Flutter', 'Dart', 'Audioplayers'],
             image: projectImages.project2,
             githubUrl: 'https://github.com/khaled-elbaiomy/my-toku-app',
@@ -58,7 +55,7 @@ function App() {
         {
             id: 'project3',
             name: 'Scholar Chat App',
-            description: 'تطبيق محادثة فوري متكامل مع نظام تسجيل دخول وإنشاء حسابات، مبني باستخدام Firebase لإرسال واستقبال الرسائل في الوقت الفعلي.',
+            description: 'A real-time chat application with a complete login and registration system, built using Firebase for instant messaging.',
             technologies: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore'],
             image: projectImages.project3,
             githubUrl: 'https://github.com/khaled-elbaiomy/chat_app',
@@ -67,7 +64,7 @@ function App() {
         {
             id: 'project4',
             name: 'News Cloud App',
-            description: 'تطبيق إخباري يعرض آخر الأخبار من مصادر عالمية مختلفة مع إمكانية تصفح الأخبار حسب الفئات مثل الأعمال والترفيه والرياضة.',
+            description: 'A news app that displays the latest articles from various global sources, allowing users to browse news by different categories.',
             technologies: ['Flutter', 'Dart', 'Dio', 'News API'],
             image: projectImages.project4,
             githubUrl: 'https://github.com/khaled-elbaiomy/news-app',
@@ -196,10 +193,9 @@ function App() {
                         <p className={`text-xl max-w-3xl mx-auto ${
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}>
-                            Dedicated to crafting exceptional mobile experiences through clean code and innovative design
+                            Dedicated to crafting exceptional mobile experiences through clean code and innovative design.
                         </p>
                     </div>
-
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
                             <div className={`p-8 rounded-2xl border ${
@@ -220,7 +216,6 @@ function App() {
                                     Specialized in mobile application development with focus on cross-platform solutions.
                                 </p>
                             </div>
-
                             <div className={`p-8 rounded-2xl border ${
                 isDarkMode
                   ? 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-800'
@@ -235,12 +230,11 @@ function App() {
                                 <p className={`leading-relaxed ${
                   isDarkMode ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                                    Fresh Flutter developer with solid expertise in Dart programming and Flutter framework.
+                                    Fresh Flutter developer with solid expertise in Dart programming and the Flutter framework.
                                     Experienced in building production-ready mobile applications with clean architecture and optimal performance.
                                 </p>
                             </div>
                         </div>
-
                         <div className="space-y-8">
                             <div>
                                 <h3 className={`text-2xl font-bold mb-6 ${
@@ -293,10 +287,9 @@ function App() {
                         <p className={`text-xl max-w-3xl mx-auto ${
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}>
-                            A showcase of my mobile development work, featuring diverse applications built with Flutter
+                            A showcase of my mobile development work, featuring diverse applications built with Flutter.
                         </p>
                     </div>
-
                     <div className="grid md:grid-cols-2 gap-8">
                         {projects.map((project) => (
                             <div key={project.id} className={`group rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden ${
@@ -334,7 +327,7 @@ function App() {
                       className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all"
                     >
                                             <ExternalLink className="w-4 h-4" />
-                                            Live Demo
+                                            Details
                                         </button>
                                         <a
                       href={project.githubUrl}
@@ -367,7 +360,6 @@ function App() {
           }`}>
                         Ready to collaborate on your next mobile app project? Let's discuss how we can bring your ideas to life.
                     </p>
-
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                         <a
               href="https://github.com/khaled-elbaiomy"
@@ -395,7 +387,6 @@ function App() {
                   : 'text-gray-600 group-hover:text-gray-300'
               }`}>View my code</p>
                         </a>
-
                         <a
               href="https://www.linkedin.com/in/khaled-elbaiomy-400a3528b/"
               target="_blank"
@@ -422,7 +413,6 @@ function App() {
                   : 'text-gray-600 group-hover:text-blue-100'
               }`}>Connect professionally</p>
                         </a>
-
                         <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=Khaledk6kh5@gmail.com"
               target="_blank"
@@ -449,7 +439,6 @@ function App() {
                   : 'text-gray-600 group-hover:text-red-100'
               }`}>Send me a message</p>
                         </a>
-
                         <a
               href="https://wa.me/2001069360386"
               target="_blank"
@@ -477,7 +466,6 @@ function App() {
               }`}>Chat with me</p>
                         </a>
                     </div>
-
                     <div className={`mb-12 p-8 rounded-2xl ${
             isDarkMode
               ? 'bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700'
@@ -523,7 +511,6 @@ function App() {
                             </div>
                         </div>
                     </div>
-
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=Khaledk6kh5@gmail.com"
@@ -546,7 +533,6 @@ function App() {
                     </div>
                 </div>
             </section>
-
             <footer className={`py-12 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-900'} text-white`}>
                 <div className="container mx-auto max-w-6xl px-6">
                     <div className="flex flex-col md:flex-row justify-between items-center">
@@ -586,7 +572,6 @@ function App() {
                     </div>
                 </div>
             </footer>
-
             <ProjectModal
         project={selectedProject}
         isOpen={isModalOpen}
